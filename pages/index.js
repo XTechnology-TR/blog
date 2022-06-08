@@ -14,7 +14,7 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Head>
-        <title>Next.js Blog Example with {CMS_NAME}</title>
+        <title>XTechnology | Hayallerinizdeki Teknolojiyi Üretir. {CMS_NAME}</title>
       </Head>
       <Container>
         <Intro />

@@ -10,7 +10,7 @@ export default async function preview(req, res) {
     secret !== process.env.WORDPRESS_PREVIEW_SECRET ||
     (!id && !slug)
   ) {
-    return res.status(401).json({ message: 'Invalid token' })
+    return res.status(401).json({ message: 'Geçersiz Token Bilgisi' })
   }
 
   // Fetch WordPress to check if the provided `id` or `slug` exists
@@ -18,7 +18,7 @@ export default async function preview(req, res) {
 
   // If the post doesn't exist prevent preview mode from being enabled
   if (!post) {
-    return res.status(401).json({ message: 'Post not found' })
+    return res.status(401).json({ message: 'Aradığınız İçerik Bulunamadı.' })
   }
 
   // Enable Preview Mode by setting the cookies
