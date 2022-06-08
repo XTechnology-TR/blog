@@ -12,6 +12,7 @@ import PostTitle from '../../components/post-title'
 import Head from 'next/head'
 import { CMS_NAME } from '../../lib/constants'
 import Tags from '../../components/tags'
+import Image from 'next/image'
 
 export default function Post({ post, posts, preview }) {
   const router = useRouter()
