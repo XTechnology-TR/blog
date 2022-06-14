@@ -12,7 +12,9 @@ export default class MyDocument extends Document {
  render() {
   return (
    <Html lang="tr">
-    <Head />
+    <Head>
+     <meta name="referrer" content="no-referrer" />
+    </Head>
     <body>
      <Main />
      <NextScript />
@@ -21,3 +23,4 @@ export default class MyDocument extends Document {
   );
  }
 }
+
