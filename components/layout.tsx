@@ -1,16 +1,23 @@
-import Alert from './alert'
-import Footer from './footer'
-import Meta from './meta'
-
-export default function Layout({ preview, children }) {
-  return (
-    <>
-      <Meta />
-      <div className="min-h-screen">
-        <Alert preview={preview} />
-        <main>{children}</main>
-      </div>
-      <Footer />
-    </>
-  )
+import Footer from "./footer"
+import Meta from "./meta"
+import Head from "next/head"
+import { CMS_NAME } from "../lib/constants"
+export default function Layout({ children }) {
+	return (
+		<>
+			<Head>
+				<title>
+					Yeteri kadar iyi geliştirilmiş bir teknoloji, sihirden farksızdır.{" "}
+					{CMS_NAME}
+				</title>
+				<meta charSet="utf-8" />
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			</Head>
+			<Meta />
+			<div className="min-h-screen">
+				<main>{children}</main>
+			</div>
+			<Footer />
+		</>
+	)
 }

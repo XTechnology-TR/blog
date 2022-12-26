@@ -6,6 +6,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       colors: {
         'accent-1': '#FAFAFA',
         'accent-2': '#EAEAEA',
@@ -23,6 +24,7 @@ module.exports = {
         tight: 1.2,
       },
       fontSize: {
+        '5md': '1.5rem',
         '5xl': '2.5rem',
         '6xl': '2.75rem',
         '7xl': '4.5rem',

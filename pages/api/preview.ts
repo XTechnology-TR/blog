@@ -12,7 +12,7 @@ export default async function preview(
   if (
     !process.env.WORDPRESS_PREVIEW_SECRET ||
     secret !== process.env.WORDPRESS_PREVIEW_SECRET ||
-    (!id && !slug)
+    (!(id || slug))
   ) {
     return res.status(401).json({ message: 'Invalid token' })
   }
