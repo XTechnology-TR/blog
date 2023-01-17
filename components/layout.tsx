@@ -10,14 +10,14 @@ export default function Layout({ children }) {
 					Yeteri kadar iyi geliştirilmiş bir teknoloji, sihirden farksızdır.{" "}
 					{CMS_NAME}
 				</title>
+				<Meta>
 			    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   			  <meta http-equiv="x-ua-compatible" content="ie=edge">
 					<meta name="viewport" content="width=device-width,
 						minimum-scale=1.0, maximum-scale=1.0,
 						user-scalable=no, shrink-to-fit=no">
-					<meta name="format-detection" content="telephone=no">
-			</Head>
-			<Meta />
+						<meta name="format-detection" content="telephone=no"></Meta>
+						</Head>
 			<div className="min-h-screen">
 				<main>{children}</main>
 			</div>
