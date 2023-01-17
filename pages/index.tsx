@@ -1,5 +1,6 @@
 import Container from "../components/container"
 import HeroPost from "../components/hero-post"
+import Meta from "../components/meta"
 import Intro from "../components/intro"
 import Layout from "../components/layout"
 import MoreStories from "../components/more-stories"
@@ -11,6 +12,7 @@ export default function Index({ allPosts: { edges }, preview }) {
 	const morePosts = edges.slice(1)
 
 	return (
+		<Meta />
 		<Layout {...preview}>
 			<Container>
 				<Intro />
