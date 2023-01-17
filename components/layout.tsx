@@ -9,13 +9,12 @@ export default function Layout({ children }) {
 	return (
 		<>
 			<Head>
-				<Meta>
 				<title>
 					Yeteri kadar iyi geliştirilmiş bir teknoloji, sihirden farksızdır.{" "}
 					{CMS_NAME}
 				</title>
-				<Meta />
-						</Head>
+			 	<Meta />
+			</Head>
 			<div className="min-h-screen">
 				<main>{children}</main>
 			</div>
