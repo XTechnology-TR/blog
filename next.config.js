@@ -33,10 +33,5 @@ module.exports = withPlaiceholder({
       },
     ],
   },
-  experimental: {
-    fontLoaders: [
-      { loader: '@next/font/google', options: { subsets: ['latin'] } },
-    ],
-  },
 })
 
