@@ -1,11 +1,10 @@
 .content {
   @apply text-lg leading-relaxed;
-}
+} 
 
 .content p,
 .content ul,
-.content ol,
-.content blockquote {
+.content ol {
   @apply my-6;
 }
 
@@ -47,12 +46,24 @@
   @apply text-xl mt-6 mb-4 leading-snug;
 }
 
-.content pre {
-  @apply whitespace-pre overflow-x-auto p-4 text-sm leading-tight border border-gray-400 bg-gray-100;
+
+/* removes default styling from input color element */
+.content ::-webkit-color-swatch {
+    border: none;
+    transition: background-color 600ms ease-out;
 }
 
-.content code {
-  @apply text-sm;
+.content ::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.content ::-moz-color-swatch,
+.content ::-moz-focus-inner {
+    border: none;
+}
+
+.content ::-moz-focus-inner {
+    padding: 0;
 }
 
 .content figcaption {
@@ -73,4 +84,42 @@
 
 .content audio {
   @apply w-full;
+}
+
+.content img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content a {
+  background: 
+    linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
+    linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+  background-size: 100% 0.1em, 0 0.1em;
+  background-position: 100% 100%, 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 400ms;
+}
+
+.content a:hover,
+.content a:focus {
+  background-size: 0 0.1em, 100% 0.1em;
+}
+
+.content code {
+  overflow-x: auto;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+.content pre {
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #000000;
+}
+
+.content pre code {
+  padding: 0;
 }

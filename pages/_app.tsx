@@ -1,22 +1,24 @@
-import '../styles/index.css'
+import { AppProps } from 'next/app'
 import { Inter } from '@next/font/google'
-import Meta from '../components/meta'
+import '../styles/index.css'
 
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 
-export default function MyApp({ Component, pageProps }) {
-  return (
-    <>
-      <Meta />
-      <style jsx global>{`
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />
+} (
+
+  <>
+
+    <style jsx global>{`
         html {
           font-family: ${inter.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />
-    </>
-  )
-}
+
+  </>
+)
+export default MyApp

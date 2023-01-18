@@ -1,3 +1,5 @@
+import Head from 'next/head'
+import Meta from "../components/meta"
 import Container from "../components/container"
 import HeroPost from "../components/hero-post"
 import Intro from "../components/intro"
@@ -11,8 +13,10 @@ export default function Index({ allPosts: { edges }, preview }) {
 	const morePosts = edges.slice(1)
 
 	return (
-	
-		<Layout {...preview}>
+			<Layout {...preview}>
+			<Head>
+			<Meta />
+			</Head>
 			<Container>
 				<Intro />
 				{heroPost && (
