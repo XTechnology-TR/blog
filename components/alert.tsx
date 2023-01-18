@@ -1,6 +1,7 @@
 import Container from './container'
 import cn from 'classnames'
 import '../pages/dev'
+import Link from 'next/link'
 
 export default function Alert({ preview }) {
  return (
@@ -15,23 +16,22 @@ export default function Alert({ preview }) {
      {preview ? (
       <>
        Bu Blog geliştirme aşamasında.{' '}
-       <a
-        href="/api/exit-preview"
-        className="underline hover:text-cyan duration-200 transition-colors"
-       >
+       <Link href="/api/exit-preview"
+        className="underline hover:text-cyan duration-200 transition-colors"       >
         Bu blog aktif geliştirme aşamasında
-       </a>{' '}
+       </Link>
+       {' '}
        Detaylı Bilgi İçin..
+
       </>
      ) : (
       <>
        Bu blog aktif geliştirme aşamasında{' '}
-       <a
-        href="/dev"
+       <Link href="/dev"
         className="underline hover:text-success duration-200 transition-colors"
        >
         Detaylı Bilgi İçin..
-       </a>
+       </Link>
        .
       </>
      )}
