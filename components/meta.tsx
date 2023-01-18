@@ -4,14 +4,15 @@ import Head from 'next/head'
 export default function Meta() {
   return (
     <Head>
+      <meta lang='tr' />
+      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+      <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
       <title>Yeteri kadar iyi geliştirilmiş bir teknoloji, sihirden farksızdır. {CMS_NAME}</title>
       <link rel="shortcut icon" href="/favicon/favicon.ico" />
       <meta name="msapplication-TileColor" content="#000000" />
       <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
       <meta name="theme-color" content="#000" />
-      <meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
       <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-      <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
       <meta name="format-detection" content="telephone=no" />
       <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
       <meta
