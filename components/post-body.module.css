@@ -35,17 +35,16 @@
 }
 
 .content h2 {
-	@apply text-3xl mt-12 mb-4 leading-snug;
+	@apply mt-12 mb-4 text-3xl leading-snug;
 }
 
 .content h3 {
-	@apply text-2xl mt-8 mb-4 leading-snug;
+	@apply mt-8 mb-4 text-2xl leading-snug;
 }
 
 .content h4 {
-	@apply text-xl mt-6 mb-4 leading-snug;
+	@apply mt-6 mb-4 text-xl leading-snug;
 }
-
 
 /* removes default styling from input color element */
 .content ::-webkit-color-swatch {
@@ -71,7 +70,7 @@
 }
 
 .content blockquote {
-	@apply border-l-4 border-gray-500 bg-gray-200 italic ml-0 py-4 px-6;
+	@apply ml-0 border-l-4 border-gray-500 bg-gray-200 py-4 px-6 italic;
 }
 
 .content blockquote p {
@@ -94,8 +93,17 @@
 }
 
 .content a {
-	background: linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
-	linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 0, 180, 1), rgba(0, 100, 200, 1));
+	background: linear-gradient(
+			to right,
+			rgba(100, 200, 200, 1),
+			rgba(100, 200, 200, 1)
+		),
+		linear-gradient(
+			to right,
+			rgba(255, 0, 0, 1),
+			rgba(255, 0, 180, 1),
+			rgba(0, 100, 200, 1)
+		);
 	background-size: 100% 0.1em, 0 0.1em;
 	background-position: 100% 100%, 0 100%;
 	background-repeat: no-repeat;
@@ -122,3 +130,5 @@
 .content pre code {
 	padding: 0;
 }
+
+

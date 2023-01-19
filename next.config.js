@@ -6,7 +6,7 @@ if (!process.env.WORDPRESS_API_URL) {
 }
 
 /** @type {import('next').NextConfig} */
-const {withPlaiceholder} = require("@plaiceholder/next");
+const { withPlaiceholder } = require("@plaiceholder/next");
 module.exports = withPlaiceholder({
 	compress: true,
 	optimizeFonts: true,
@@ -15,6 +15,17 @@ module.exports = withPlaiceholder({
 	},
 	staticPageGenerationTimeout: 60,
 	swcMinify: true,
+})
+
+module.exports = {
+	async rewrites() {
+		return [
+			{
+				source: '/sitemap.xml',
+				destination: '/api/sitemap',
+			},
+		]
+	},
 	images: {
 		formats: ['image/webp'],
 		imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -29,9 +40,9 @@ module.exports = withPlaiceholder({
 		remotePatterns: [
 			{
 				protocol: 'https',
-				hostname: '**.xtechnology.co',
+				hostname: 'xtechnology.co',
 			},
 		],
 	},
-})
+}
 
