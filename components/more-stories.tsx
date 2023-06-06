@@ -1,5 +1,6 @@
 import PostPreview from './post-preview'
 
+
 export default function MoreStories({ posts }) {
   return (
     <section>
@@ -11,8 +12,7 @@ export default function MoreStories({ posts }) {
           <PostPreview
             key={node.slug}
             title={node.title}
-            coverImage={node.featuredImage}
-            date={node.date}
+            coverImage={node.featuredImage}          
             author={node.author}
             slug={node.slug}
             excerpt={node.excerpt}
