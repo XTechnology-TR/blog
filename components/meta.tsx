@@ -1,27 +1,26 @@
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "../lib/constants";
-import Head from "next/head";
 
 export default function Meta() {
 	return (
-		<Head>
-			<meta lang="tr" />
+		<>
 			<meta
 				name="viewport"
-				content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
+				content="width=device-width minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no"
 			/>
-			<meta httpEquiv="Content-Type" content="text/html; charset=UTF-8" />
+
+			<meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 			<meta
 				name="keywords"
 				content={`${CMS_NAME} blog, blog, ${CMS_NAME} teknoloji, bilim, blog posts, posts, yazılım, web tasarım, seo, dijital pazarlama`}
 			/>
 			<title>
-				Yeteri kadar iyi geliştirilmiş bir teknoloji, sihirden farksızdır.{" "}
+				Yeteri kadar iyi geliştirilmiş bir teknoloji, sihirden farksızdır.
 				{CMS_NAME}
 			</title>
 			<link rel="shortcut icon" href="/favicon/favicon.ico" />
 			<meta name="msapplication-TileColor" content="#000000" />
 			<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-			<link rel="canonical" href="https://xtechnology.co/" />
+			<link rel="canonical" href="https://blog.xtechnology.co/" />
 			<meta name="theme-color" content="#000" />
 			<meta httpEquiv="x-ua-compatible" content="ie=edge" />
 			<meta name="format-detection" content="telephone=no" />
@@ -77,7 +76,7 @@ export default function Meta() {
 			<meta name="twitter:site" content="@xtechnology7" />
 			<meta name="twitter:creator" content="@xtechnology7" />
 			<meta name="twitter:url" content="https://blog.xtechnology.co" />
-			<meta name="twitter:title" content="{CMS_NAME" />
+			<meta name="twitter:title" content="{post_title}" />
 			<meta
 				name="twitter:description"
 				content="Bilim ve Teknoloji alandında kendini geliştirmek isteyenlerin ilgi duyacağı makale, eğitim ve haberleri bu bölümden takip edebilirsiniz."
@@ -87,6 +86,6 @@ export default function Meta() {
 				name="twitter:image:alt"
 				content="Bilim ve Teknoloji alandında kendini geliştirmek isteyenlerin ilgi duyacağı makale, eğitim ve haberleri bu bölümden takip edebilirsiniz."
 			/>
-		</Head>
+		</>
 	);
 }

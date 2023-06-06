@@ -1,10 +1,17 @@
-import { AppProps } from "next/app";
-import { Inter } from "@next/font/google";
-import "../styles/index.css";
+import type { AppProps } from "next/app"
+import { Analytics } from '@vercel/analytics/react';
+import "../styles/index.css"
 
-const inter = Inter({ subsets: ["latin"] });
-
-function MyApp({ Component, pageProps }: AppProps) {
-	return <Component {...pageProps} />;
+export default function App({ Component, pageProps }: AppProps) {
+	return (
+		<>
+			<Component {...pageProps} />
+			<Analytics debug={false} />;
+		</>
+	);
 }
-export default MyApp;
+
+// Manually disable console.log() in production (simpler/arguably more elegant than libs)
+if (process.env.NODE_ENV === "production") {
+  console.log = function () {}
+}

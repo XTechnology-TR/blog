@@ -1,36 +1,37 @@
 {
-	"private": true,
-	"scripts": {
-		"dev": "next",
-		"build": "next build",
-		"start": "next start",
-		"lint": "next lint"
-	},
-	"dependencies": {
-		"@next/font": "^13.1.1",
-		"@plaiceholder/next": "^2.5.0",
-		"@types/node": "^18.11.17",
-		"@types/react": "^18.0.26",
-		"@types/react-dom": "^18.0.10",
-		"classnames": "^2.3.2",
-		"date-fns": "^2.29.3",
-		"next": "^13.1.1",
-		"plaiceholder": "^2.5.0",
-		"postcss-flexbugs-fixes": "^5.0.2",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"sharp": "^0.31.3",
-		"typescript": "^4.9.4"
-	},
-	"devDependencies": {
-		"autoprefixer": "10.4.13",
-		"eslint": "8.30.0",
-		"eslint-config-next": "^13.1.1",
-		"postcss": "8.4.20",
-		"postcss-import": "^15.1.0",
-		"prettier": "^2.8.3",
-		"prettier-plugin-tailwindcss": "^0.2.1",
-		"rome": "^11.0.0",
-		"tailwindcss": "^3.2.4"
-	}
+    "private": true,
+    "scripts": {
+        "dev": "next",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "@plaiceholder/next": "^2.5.0",
+        "@types/node": "^18.11.17",
+        "@types/react": "^18.0.26",
+        "@types/react-dom": "^18.0.10",
+        "@vercel/analytics": "^1.0.1",
+        "classnames": "^2.3.2",
+        "date-fns": "^2.29.3",
+        "next": "^13.4.4",
+        "plaiceholder": "^2.5.0",
+        "postcss-flexbugs-fixes": "^5.0.2",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "sharp": "^0.31.3",
+        "typescript": "^4.9.4"
+    },
+    "devDependencies": {
+        "autoprefixer": "10.4.13",
+        "babel-plugin-styled-components": "^2.0.7",
+        "eslint": "8.30.0",
+        "eslint-config-next": "^13.1.1",
+        "postcss": "8.4.20",
+        "postcss-import": "^15.1.0",
+        "prettier": "^2.8.3",
+        "prettier-plugin-tailwindcss": "^0.2.1",
+        "rome": "^11.0.0",
+        "tailwindcss": "^3.2.4"
+    }
 }
