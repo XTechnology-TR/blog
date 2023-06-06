@@ -11,10 +11,9 @@ export default function Meta() {
 			<meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
 			<meta
 				name="keywords"
-				content={`${CMS_NAME} blog, blog, ${CMS_NAME} teknoloji, bilim, blog posts, posts, yazılım, web tasarım, seo, dijital pazarlama`}
+				content={`${CMS_NAME} blog teknoloji, bilim, blog posts, posts, yazılım, web tasarım, seo, dijital pazarlama`}
 			/>
 			<title>
-				Yeteri kadar iyi geliştirilmiş bir teknoloji, sihirden farksızdır.
 				{CMS_NAME}
 			</title>
 			<link rel="shortcut icon" href="/favicon/favicon.ico" />

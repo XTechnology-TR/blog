@@ -25,12 +25,12 @@
 	@apply list-decimal;
 }
 
-.content ul > li > ul,
-.content ol > li > ol {
+.content ul>li>ul,
+.content ol>li>ol {
 	@apply my-0 ml-4;
 }
 
-.content ul > li > ul {
+.content ul>li>ul {
 	list-style: circle;
 }
 
@@ -93,17 +93,13 @@
 }
 
 .content a {
-	background: linear-gradient(
-			to right,
+	background: linear-gradient(to right,
 			rgba(100, 200, 200, 1),
-			rgba(100, 200, 200, 1)
-		),
-		linear-gradient(
-			to right,
+			rgba(100, 200, 200, 1)),
+		linear-gradient(to right,
 			rgba(255, 0, 0, 1),
 			rgba(255, 0, 180, 1),
-			rgba(0, 100, 200, 1)
-		);
+			rgba(0, 100, 200, 1));
 	background-size: 100% 0.1em, 0 0.1em;
 	background-position: 100% 100%, 0 100%;
 	background-repeat: no-repeat;

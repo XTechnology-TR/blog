@@ -1,24 +1,23 @@
-import Head from 'next/head';
-import Meta from "../components/meta"
-import Container from "../components/container"
-import HeroPost from "../components/hero-post"
-import Intro from "../components/intro"
-import Layout from "../components/layout"
-import MoreStories from "../components/more-stories"
-import {getAllPostsForHome} from "../lib/api"
-import {GetStaticProps} from "next"
+import Head from "next/head";
+import Container from "../components/container";
+import HeroPost from "../components/hero-post";
+import Intro from "../components/intro";
+import Layout from "../components/layout";
+import MoreStories from "../components/more-stories";
+import { getAllPostsForHome } from "../lib/api";
+import { GetStaticProps } from "next";
 
-export default function Index({allPosts: {edges}, preview}) {
-	const heroPost = edges[0]?.node
-	const morePosts = edges.slice(1)
+export default function Index({ allPosts: { edges }, preview }) {
+	const heroPost = edges[0]?.node;
+	const morePosts = edges.slice(1);
 
 	return (
 		<Layout {...preview}>
 			<Head>
-				<Meta/>
+				<title>{heroPost.title}</title>
 			</Head>
 			<Container>
-				<Intro/>
+				<Intro />
 				{heroPost && (
 					<HeroPost
 						title={heroPost.title}
@@ -29,17 +28,17 @@ export default function Index({allPosts: {edges}, preview}) {
 						excerpt={heroPost.excerpt}
 					/>
 				)}
-				{morePosts.length > 0 && <MoreStories posts={morePosts}/>}
+				{morePosts.length > 0 && <MoreStories posts={morePosts} />}
 			</Container>
 		</Layout>
-	)
+	);
 }
 
-export const getStaticProps: GetStaticProps = async ({preview = false}) => {
-	const allPosts = await getAllPostsForHome(preview)
+export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
+	const allPosts = await getAllPostsForHome(preview);
 
 	return {
-		props: {allPosts, preview},
+		props: { allPosts, preview },
 		revalidate: 20,
-	}
-}
+	};
+};

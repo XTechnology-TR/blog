@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/legacy/image"
 import { format, parse } from "date-fns"
 import utilStyles from "../styles/utils.module.css"
 type Props = {
@@ -10,8 +10,8 @@ const PublishedDate = ({ dateStr }: Props) => {
   const dateString = format(new Date(), 'yyyy-MM-dd')
   return (
     <small style={{ display: "flex", alignItems: "center" }} className={utilStyles.lightText}>
-      <Image priority src={"/icons/cal.svg"} alt="" height={28} width={28} />
-      <time dateTime={dateString}>{dateString}</time>
+      <Image priority src={"https://www.svgrepo.com/svg/485924/timer"} alt="saatkro" height={28} width={28} />
+      <time dateTime={dateStr}>{dateString}</time>
     </small>
   )
 }
