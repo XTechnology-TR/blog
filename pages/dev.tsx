@@ -4,7 +4,7 @@ import * as React from 'react'
 export default class App extends React.Component {
 	render() {
 		return (<div>
-			<h1>Hello Next.js</h1> <h2>Hello Next. TypeScript</h2>
+			<h1>Çok yakında</h1> <h2>Güncelleme Versiyon 2.0 Geliyor..</h2>
 		</div>)
 	}
 }

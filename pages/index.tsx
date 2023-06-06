@@ -15,7 +15,7 @@ export default function Index({ allPosts: { edges }, preview }) {
   return (
     <Layout preview={preview}>
       <Head>
-        <title>{`Algoritmik düşünüyor ve geleceği kodluyoruz. ${CMS_NAME}`}</title>
+        <title>{`${CMS_NAME} Blog - Yazılım, Web, Mobil, Siber Güvenlik ve Yapay Zeka Hakkında Her Şey`}</title>
       </Head>
       <Container>
         <Intro />
