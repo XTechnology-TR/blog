@@ -1,5 +1,4 @@
 import Avatar from './avatar'
-import Date from './date'
 import CoverImage from './cover-image'
 import Link from 'next/link'
 
@@ -26,10 +25,7 @@ export default function HeroPost({
               className="hover:underline"
               dangerouslySetInnerHTML={{ __html: title }}
             ></Link>
-          </h3>
-          <div className="mb-4 md:mb-0 text-lg">
-            <Date dateStr={date} />
-          </div>
+          </h3>          
         </div>
         <div>
           <div

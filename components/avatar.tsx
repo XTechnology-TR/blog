@@ -10,7 +10,7 @@ export default function Avatar({ author }) {
         <Image
           src={`https://avatars.dicebear.com/api/initials/${name}.svg`}
           className="rounded-full"
-          alt={name}
+          alt="alt-resim-aga"
           width={40}
           height={40}
         />

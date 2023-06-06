@@ -1,24 +1,24 @@
-import PostPreview from "./post-preview";
+import PostPreview from './post-preview'
 
 export default function MoreStories({ posts }) {
-	return (
-		<section>
-			<h2 className="mb-8 text-5md font-bold leading-tight tracking-tighter md:text-5md">
-				Bunlarda İlginizi Çekebilir;
-			</h2>
-			<div className="mb-32 grid grid-cols-1 gap-y-20 md:grid-cols-2 md:gap-x-16 md:gap-y-32 lg:gap-x-32">
-				{posts.map(({ node }) => (
-					<PostPreview
-						key={node.slug}
-						title={node.title}
-						coverImage={node.featuredImage}
-						date={node.date}
-						author={node.author}
-						slug={node.slug}
-						excerpt={node.excerpt}
-					/>
-				))}
-			</div>
-		</section>
-	);
+  return (
+    <section>
+      <h2 className="mb-8 text-6xl md:text-4xl font-bold tracking-tighter leading-tight">
+        İlginizi çekebilir.
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+        {posts.map(({ node }) => (
+          <PostPreview
+            key={node.slug}
+            title={node.title}
+            coverImage={node.featuredImage}
+            date={node.date}
+            author={node.author}
+            slug={node.slug}
+            excerpt={node.excerpt}
+          />
+        ))}
+      </div>
+    </section>
+  )
 }
