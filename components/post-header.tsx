@@ -23,7 +23,7 @@ export default function PostHeader({
         <div className="block md:hidden mb-6">
           <Avatar author={author} />
         </div>
-        <div className="mb-6 text-lg">        
+        <div className="mb-6 text-sm font-bold">
           <Categories categories={categories} />
         </div>
       </div>

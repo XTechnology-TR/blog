@@ -1,0 +1,68 @@
+{
+	"short_name": "XTechnology",
+	"name": "XTechnology Blog Sayfası | Teknoloji Blogu",
+	"icons": [
+		{
+			"src": "/favicon/safari-pinned-tab.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512"
+		},
+		{
+			"src": "/favicon/android-chrome-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/favicon/android-chrome-512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"id": "/?source=pwa",
+	"start_url": "/?source=pwa",
+	"background_color": "#0000",
+	"display": "standalone",
+	"scope": "/",
+	"theme_color": "#3333",
+	"shortcuts": [
+		{
+			"name": "bugün hava nasıl?",
+			"short_name": "Bugün",
+			"description": "Bugün için hava durumu bilgilerini görüntüleyin",
+			"url": "/today?source=pwa",
+			"icons": [
+				{
+					"src": "/favicon/android-chrome-192x192.png",
+					"sizes": "192x192"
+				}
+			]
+		},
+		{
+			"name": "Yarın hava nasıl?",
+			"short_name": "Yarın",
+			"description": "Yarın için hava durumu bilgilerini görüntüleyin",
+			"url": "/tomorrow?source=pwa",
+			"icons": [
+				{
+					"src": "/favicon/android-chrome-192x192.png",
+					"sizes": "192x192"
+				}
+			]
+		}
+	],
+	"description": "Hava tahmini bilgileri",
+	"screenshots": [
+		{
+			"src": "/favicon/android-chrome-512x512.png",
+			"type": "image/png",
+			"sizes": "540x720",
+			"form_factor": "narrow"
+		},
+		{
+			"src": "/favicon/android-chrome-512x512.png",
+			"type": "image/jpg",
+			"sizes": "720x540",
+			"form_factor": "wide"
+		}
+	]
+}

@@ -4,7 +4,7 @@ import Meta from '../components/meta'
 export default class MyDocument extends Document {
 	render() {
 		return (
-			<Html>
+			<Html lang="tr">
 				<Head>
 					<Meta />
 				</Head>
