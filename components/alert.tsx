@@ -24,8 +24,7 @@ export default function Alert({ }) {
 				data-easing2="linear" data-easing="linear" data-collapse="medium" role="banner"
 				data-no-scroll="1" data-duration="250" data-doc-height="1">
 				<div className="nav-container w-container">
-
-					<div className="mega-xtech-logo-wrap">
+					<div className="brand homepage w-nav-brand">
 						<Link
 							href={`/`}
 							className="hover:underline"
