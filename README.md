@@ -8,3 +8,5 @@ XTechnology Blog'un amacı, teknolojiye tutkulu insanları bir araya getirmek ve
 
 ### [https://blog.xtechnology.co](https://blog.xtechnology.co)
 
+![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=blog&style=flat-square)
+![visitor badge](https://visitor-badge.lithub.cc/badge?page_id=blog)
