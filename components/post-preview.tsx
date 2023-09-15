@@ -1,6 +1,6 @@
-import Avatar from './avatar'
-import CoverImage from './cover-image'
-import Link from 'next/link'
+import Avatar from "./avatar";
+import CoverImage from "./cover-image";
+import Link from "next/link";
 
 export default function PostPreview({
 	title,
@@ -17,7 +17,7 @@ export default function PostPreview({
 						<CoverImage title={title} coverImage={coverImage} slug={slug} />
 					)}
 				</div>
-				<h3 className="text-2xl mb-3 leading-snug">
+				<h3 className="mb-3 text-2xl leading-snug">
 					<Link
 						href={`/posts/${slug}`}
 						className="hover:underline"
@@ -26,11 +26,11 @@ export default function PostPreview({
 				</h3>
 
 				<div
-					className="text-sl leading-relaxed mb-4"
+					className="text-sl mb-4 leading-relaxed"
 					dangerouslySetInnerHTML={{ __html: excerpt }}
 				/>
 				<Avatar author={author} />
 			</div>
 		</div>
-	)
+	);
 }

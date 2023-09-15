@@ -11,7 +11,7 @@ export default class ScriptLoader {
 		this.isLoaded = false;
 	}
 
-	loading = 'lazy' // {lazy} | {eager}
+	loading = "lazy"; // {lazy} | {eager}
 
 	loadScript() {
 		return new Promise((resolve, reject) => {

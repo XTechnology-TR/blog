@@ -1,20 +1,33 @@
 import Image from "next/image";
 
-
 export default function Footer() {
 	return (
 		<>
-			<div className="grid-halves bg-black wf-section" >
-				<div className="column-padding right-right" >
-					<div className="relative" >
-						<Image src="/book.svg" loading="lazy" alt="kitap" width={0} height={0} className="callout-image tme-book" />
+			<div className="grid-halves wf-section bg-black">
+				<div className="column-padding right-right">
+					<div className="relative">
+						<Image
+							src="/book.svg"
+							loading="lazy"
+							alt="kitap"
+							width={0}
+							height={0}
+							className="callout-image tme-book"
+						/>
 						<div>
 							<style>
-								.tme-book: will-change: transform;
-								transform: translate3d(0px, 8vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
-								transform-style: preserve-3d;
+								.tme-book: will-change: transform; transform: translate3d(0px,
+								8vh, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg)
+								rotateZ(0deg) skew(0deg, 0deg); transform-style: preserve-3d;
 							</style>
-							<Image src="/new-release.svg" loading="lazy" alt="resim" width={0} height={0} className="sticker sahil-new-release" />
+							<Image
+								src="/new-release.svg"
+								loading="lazy"
+								alt="resim"
+								width={0}
+								height={0}
+								className="sticker sahil-new-release"
+							/>
 						</div>
 					</div>
 				</div>
@@ -22,15 +35,22 @@ export default function Footer() {
 					<div className="column-padding tight-left">
 						<div className="content-grid">
 							<div className="sahil-bio-grid">
-								<Image src="/sahil.svg" loading="lazy" alt="Ahmet İnanç KOCA - Founder and CEO of		XTechnology" width={100} height={100} />
+								<Image
+									src="/sahil.svg"
+									loading="lazy"
+									alt="Ahmet İnanç KOCA - Founder and CEO of		XTechnology"
+									width={100}
+									height={100}
+								/>
 								<div className="spacing-xs">
 									<div>
 										<strong>Ahmet İnanç KOCA</strong>
 									</div>
 									<div className="text-small">
 										XTechnology Yöneticisi, Yazılım Geliştirici
-										<span className="line-break">Bay Beyin, Elektromanyetizma ve
-											Kodların Frekansı</span>
+										<span className="line-break">
+											Bay Beyin, Elektromanyetizma ve Kodların Frekansı
+										</span>
 									</div>
 								</div>
 							</div>
@@ -38,16 +58,19 @@ export default function Footer() {
 							<p className="text-md">
 								Mükemmel bir iş yoktur, sadece çok sayıda denenmiş girişim
 								vardır. <br />
-								<br />XTechnology`i`nin kurucusu Ahmet İnanç KOCA`ı`dan
-								<a href="#" target="_blank" className="link-white"> Sadece Hayal
-									Edin!”</a>
-								—adlı büyük şirketler yerine büyük şirketler kurmayı tercih
-								eden
+								<br />
+								XTechnology`i`nin kurucusu Ahmet İnanç KOCA`ı`dan
+								<a href="#" target="_blank" className="link-white">
+									{" "}
+									Sadece Hayal Edin!”
+								</a>
+								—adlı büyük şirketler yerine büyük şirketler kurmayı tercih eden
 								hayalpereset girişimciler için bir manifesto olan bu
 								kitabımızdan çok şey öğreneceksiniz. <br />
-
-								<a href="#" target="_blank" className="link-white">Daha fazlası
-									burada..</a>.
+								<a href="#" target="_blank" className="link-white">
+									Daha fazlası burada..
+								</a>
+								.
 							</p>
 						</div>
 					</div>
@@ -60,77 +83,193 @@ export default function Footer() {
 						<div className="section-intro cta">
 							<h2 className="section-title">
 								İşinizi paylaşın.
-								<span className="line-break">Dışarıda birinin buna ihtiyacı var.</span>
+								<span className="line-break">
+									Dışarıda birinin buna ihtiyacı var.
+								</span>
 							</h2>
-							<a href="https://xtechnology.co/giris" className="shadow-button-wrap w-inline-block" >
+							<a
+								href="https://xtechnology.co/giris"
+								className="shadow-button-wrap w-inline-block"
+							>
 								<label htmlFor="">Satışa Başla</label>
-								<div className="shadow-button-text" >Hemen Şimdi Satışa Başla
+								<div className="shadow-button-text">
+									Hemen Şimdi Satışa Başla
 								</div>
 							</a>
 						</div>
 					</div>
 				</div>
-
 			</>
 			<div>
-				<div className="section bg-black wf-section">
+				<div className="section wf-section bg-black">
 					<div className="container">
 						<div className="footer-grid">
-							<a href="https://xtechnology.co/" id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db6d-1225db6a" aria-current="page" className="brand w-nav-brand w--current">
+							<a
+								href="https://xtechnology.co/"
+								id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db6d-1225db6a"
+								aria-current="page"
+								className="brand w-nav-brand w--current"
+							>
 								<style jsx>
-									{
-										`.logo display: block;
+									{`.logo display: block;
 						transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 						transform-style: preserve-3d;
 						width: auto;
 						height: auto;
-						`
-									}
+						`}
 								</style>
-								<Image src="/xtechnology-logo-white.svg" loading="lazy" alt="logox" className="logo" width={0} height={0} />
+								<Image
+									src="/xtechnology-logo-white.svg"
+									loading="lazy"
+									alt="logox"
+									className="logo"
+									width={0}
+									height={0}
+								/>
 							</a>
-							<div id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db6f-1225db6a" className="spacing-medium">
+							<div
+								id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db6f-1225db6a"
+								className="spacing-medium"
+							>
 								<h4 className="text-xl">
 									En son teknolojik gelişmelerden haberdar olmak, ipuçları ve
 									taktikler almak için abone olun.
 								</h4>
 								<div className="w-embed">
-									<form className="inline-newsletter-grid" action="/follow_from_embed_form" method="post">
-										<input name="seller_id" type="hidden" value="6282492303727" />
-										<input name="email" className="form-input footer-newsletter
-										w-input" placeholder="E-Posta Adresiniz" type="email" />
-										<button className="form-submit-btn arrow w-button" type="submit">
+									<form
+										className="inline-newsletter-grid"
+										action="/follow_from_embed_form"
+										method="post"
+									>
+										<input
+											name="seller_id"
+											type="hidden"
+											value="6282492303727"
+										/>
+										<input
+											name="email"
+											className="form-input footer-newsletter
+										w-input"
+											placeholder="E-Posta Adresiniz"
+											type="email"
+										/>
+										<button
+											className="form-submit-btn arrow w-button"
+											type="submit"
+										>
 											→
 										</button>
 									</form>
 								</div>
 							</div>
-							<div id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db7c-1225db6a" className="footer-links-grid">
-								<div id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db7d-1225db6a" className="spacing-small">
-									<a href="https://destek.xtechnology.co/" className="footer-link">Destek</a>
-									<a href="https://xtechnology.co/akademi" className="footer-link">X-Akademi</a>
-									<a href="https://blog.xtechnology.co/" className="footer-link">Blog</a>
-									<a href="https://xtechnology.co/sartlarvekosullar" className="footer-link">Kullanım Şartları</a>
-									<a href="https://xtechnology.co/gizlilikpolitikasi" className="footer-link">Gizlilik Politikası</a>
+							<div
+								id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db7c-1225db6a"
+								className="footer-links-grid"
+							>
+								<div
+									id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db7d-1225db6a"
+									className="spacing-small"
+								>
+									<a
+										href="https://destek.xtechnology.co/"
+										className="footer-link"
+									>
+										Destek
+									</a>
+									<a
+										href="https://xtechnology.co/akademi"
+										className="footer-link"
+									>
+										X-Akademi
+									</a>
+									<a
+										href="https://blog.xtechnology.co/"
+										className="footer-link"
+									>
+										Blog
+									</a>
+									<a
+										href="https://xtechnology.co/sartlarvekosullar"
+										className="footer-link"
+									>
+										Kullanım Şartları
+									</a>
+									<a
+										href="https://xtechnology.co/gizlilikpolitikasi"
+										className="footer-link"
+									>
+										Gizlilik Politikası
+									</a>
 								</div>
-								<div id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db8c-1225db6a" className="spacing-small">
-									<a href="https://xtechnology.co/hizmetlerimiz" className="footer-link">Hizmetlerimiz</a>
-									<a href="https://xtechnology.co/referanslar" className="footer-link">Referanslar</a>
-									<a href="https://xtechnology.co/kesfet" className="footer-link">Keşfet</a>
-									<a href="https://xtechnology.co/insankaynaklari" className="footer-link">İş Başvurusu</a>
-									<a href="https://xtechnology.co/yolharitasi" className="footer-link">Yol haritası</a>
+								<div
+									id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db8c-1225db6a"
+									className="spacing-small"
+								>
+									<a
+										href="https://xtechnology.co/hizmetlerimiz"
+										className="footer-link"
+									>
+										Hizmetlerimiz
+									</a>
+									<a
+										href="https://xtechnology.co/referanslar"
+										className="footer-link"
+									>
+										Referanslar
+									</a>
+									<a
+										href="https://xtechnology.co/kesfet"
+										className="footer-link"
+									>
+										Keşfet
+									</a>
+									<a
+										href="https://xtechnology.co/insankaynaklari"
+										className="footer-link"
+									>
+										İş Başvurusu
+									</a>
+									<a
+										href="https://xtechnology.co/yolharitasi"
+										className="footer-link"
+									>
+										Yol haritası
+									</a>
 								</div>
 							</div>
-							<div id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db99-1225db6a" className="flex-vertical">
-								<Image src="/xtechnology-icon.svg" loading="lazy" alt="footer_xtechnology_logo" className="footer-xtech-icon" width={0} height={0} />
+							<div
+								id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db99-1225db6a"
+								className="flex-vertical"
+							>
+								<Image
+									src="/xtechnology-icon.svg"
+									loading="lazy"
+									alt="footer_xtechnology_logo"
+									className="footer-xtech-icon"
+									width={0}
+									height={0}
+								/>
 								<div className="text-small">Ⓒ 2022 XTechnology, Inc.</div>
 							</div>
-							<div id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db9d-1225db6a" className="footer-social-icon-grid">
-								<a href="https://twitter.com/XTechnology7" className="social-link
-								w-inline-block">
+							<div
+								id="w-node-_030dd1b8-1abf-c77d-9891-671c1225db9d-1225db6a"
+								className="footer-social-icon-grid"
+							>
+								<a
+									href="https://twitter.com/XTechnology7"
+									className="social-link
+								w-inline-block"
+								>
 									<div className="w-embed">
-										<svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M29.4254 0.298606C28.1446 1.20207 26.7264 1.89307
+										<svg
+											width="30"
+											height="25"
+											viewBox="0 0 30 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M29.4254 0.298606C28.1446 1.20207 26.7264 1.89307
 											25.2256 2.34501C24.4201 1.41879 23.3495 0.762313 22.1587
 											0.464359C20.9679 0.166406 19.7143 0.241354 18.5675
 											0.679067C17.4207 1.11678 16.436 1.89614 15.7466
@@ -141,15 +280,27 @@ export default function Footer() {
 											19.0239C6.60805 20.8937 3.32662 21.8312 0 21.6989C12.0377
 											28.3865 26.7504 21.6989 26.7504 6.31744C26.7491 5.94488
 											26.7133 5.57324 26.6434 5.2073C28.0084 3.86108 28.9718
-											2.16138 29.4254 0.298606Z" fill="currentColor"></path>
+											2.16138 29.4254 0.298606Z"
+												fill="currentColor"
+											></path>
 										</svg>
 									</div>
 								</a>
-								<a href="https://www.youtube.com/" className="social-link
-								w-inline-block">
+								<a
+									href="https://www.youtube.com/"
+									className="social-link
+								w-inline-block"
+								>
 									<div className="w-embed">
-										<svg width="33" height="25" viewBox="0 0 33 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M32.2197 5.58439C32.2197 2.77196 30.1507 0.509525
+										<svg
+											width="33"
+											height="25"
+											viewBox="0 0 33 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M32.2197 5.58439C32.2197 2.77196 30.1507 0.509525
 											27.5941 0.509525C24.1312 0.347654 20.5995 0.285156 16.9903
 											0.285156H15.8651C12.2647 0.285156 8.72672 0.347654 5.26378
 											0.51015C2.71346 0.51015 0.644451 2.78509 0.644451
@@ -162,14 +313,26 @@ export default function Footer() {
 											18.9528C32.361 16.7216 32.4297 14.4966 32.4235
 											12.2655C32.4376 10.0405 32.3697 7.81349 32.2197
 											5.58439ZM13.3648 18.4028V6.12187L22.4284 12.2592L13.3648
-											18.4028Z" fill="currentColor"></path>
+											18.4028Z"
+												fill="currentColor"
+											></path>
 										</svg>
 									</div>
 								</a>
-								<a href="https://www.instagram.com/xtechnology.co/" className="social-link w-inline-block">
+								<a
+									href="https://www.instagram.com/xtechnology.co/"
+									className="social-link w-inline-block"
+								>
 									<div className="w-embed">
-										<svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M16.7451 2.28498C18.0171 2.28893 19.2359 2.81703
+										<svg
+											width="24"
+											height="25"
+											viewBox="0 0 24 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M16.7451 2.28498C18.0171 2.28893 19.2359 2.81703
 											20.1353
 											3.75392C21.0347 4.69081 21.5417 5.96037 21.5455
 											7.28533V17.285C21.5417 18.6099 21.0347 19.8795 20.1353
@@ -182,8 +345,11 @@ export default function Footer() {
 											0.425293 3.43516 0.425293 7.28533V17.285C0.425293 21.1352
 											3.44929 24.2852 7.14546 24.2852H16.7451C20.4413 24.2852
 											23.4653 21.1352 23.4653 17.285V7.28533C23.4653 3.43516
-											20.4413 0.285156 16.7451 0.285156Z" fill="currentColor"></path>
-											<path d="M18.1855 7.21075C17.9007 7.21075 17.6223 7.12027
+											20.4413 0.285156 16.7451 0.285156Z"
+												fill="currentColor"
+											></path>
+											<path
+												d="M18.1855 7.21075C17.9007 7.21075 17.6223 7.12027
 											17.3855
 											6.95073C17.1487 6.7812 16.9641 6.54023 16.8551
 											6.25831C16.7461 5.97639 16.7176 5.66617 16.7732
@@ -215,28 +381,52 @@ export default function Footer() {
 											18.0552C15.2024 17.5881 16.102 16.7971 16.7349
 											15.7822C17.3679 14.7673 17.7057 13.5741 17.7057
 											12.3535C17.7057 10.7167 17.0988 9.14696 16.0186
-											7.98958C14.9384 6.8322 13.4733 6.18199 11.9456 6.18199Z" fill="currentColor"></path>
+											7.98958C14.9384 6.8322 13.4733 6.18199 11.9456 6.18199Z"
+												fill="currentColor"
+											></path>
 										</svg>
 									</div>
 								</a>
-								<a href="https://www.facebook.com/xtechnoloogy" className="social-link w-inline-block">
+								<a
+									href="https://www.facebook.com/xtechnoloogy"
+									className="social-link w-inline-block"
+								>
 									<div className="w-embed">
-										<svg width="14" height="25" viewBox="0 0 14 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M13.4653 0.285156H9.91988C8.35269 0.285156 6.84969
+										<svg
+											width="14"
+											height="25"
+											viewBox="0 0 14 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M13.4653 0.285156H9.91988C8.35269 0.285156 6.84969
 											0.917297 5.74152 2.04252C4.63335 3.16773 4.01079 4.69386
 											4.01079
 											6.28516V9.88516H0.465332V14.6852H4.01079V24.2852H8.73806V14.6852H12.2835L13.4653
 											9.88516H8.73806V6.28516C8.73806 5.9669 8.86257 5.66167
 											9.08421 5.43663C9.30584 5.21159 9.60644 5.08516 9.91988
-											5.08516H13.4653V0.285156Z" fill="currentColor"></path>
+											5.08516H13.4653V0.285156Z"
+												fill="currentColor"
+											></path>
 										</svg>
 									</div>
 								</a>
-								<a href="http://pinterest.com/xtechnology" className="social-link
-								w-inline-block">
+								<a
+									href="http://pinterest.com/xtechnology"
+									className="social-link
+								w-inline-block"
+								>
 									<div className="w-embed">
-										<svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-											<path d="M12.468 0.285156C5.83975 0.285156 0.465332 5.65717
+										<svg
+											width="25"
+											height="25"
+											viewBox="0 0 25 25"
+											fill="none"
+											xmlns="http://www.w3.org/2000/svg"
+										>
+											<path
+												d="M12.468 0.285156C5.83975 0.285156 0.465332 5.65717
 											0.465332 12.2825C0.465332 17.1939 3.42313 21.4144 7.65086
 											23.2729C7.61871 22.4374 7.64551 21.4304 7.85984
 											20.5199C8.09025 19.5451 9.40304 13.9803 9.40304
@@ -261,7 +451,9 @@ export default function Footer() {
 											21.2216C10.0139 22.1481 9.51557 23.0694 9.06011
 											23.7924C10.1649 24.1182 11.3108 24.2841 12.4627
 											24.2852C19.0909 24.2852 24.4653 18.9131 24.4653
-											12.2878C24.4653 5.66253 19.0963 0.285156 12.468 0.285156Z" fill="currentColor"></path>
+											12.2878C24.4653 5.66253 19.0963 0.285156 12.468 0.285156Z"
+												fill="currentColor"
+											></path>
 										</svg>
 									</div>
 								</a>
@@ -271,5 +463,5 @@ export default function Footer() {
 				</div>
 			</div>
 		</>
-	)
+	);
 }

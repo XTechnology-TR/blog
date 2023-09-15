@@ -76,7 +76,6 @@
 
 /* larger resolution screens 1600px+ */
 @media only screen and (min-width: 1000px) {
-
 	/* number of lines to show */
 	.truncateTitle {
 		-webkit-line-clamp: 1;
