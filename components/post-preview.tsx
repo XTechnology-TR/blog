@@ -10,7 +10,7 @@ export default function PostPreview({
 	slug,
 }) {
 	return (
-		<div className="separator">
+		<div className="card-wrap w-inline-block separator flex w-dyn-item">
 			<div>
 				<div className="mb-5">
 					{coverImage && (

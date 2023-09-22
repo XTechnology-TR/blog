@@ -20,10 +20,10 @@ export default function PostHeader({
 				<CoverImage title={title} coverImage={coverImage} />
 			</div>
 			<div className="mx-auto max-w-2xl">
-				<div className="mb-6 block md:hidden">
+				<div className="text-small">
 					<Avatar author={author} />
 				</div>
-				<div className="mb-6 text-sm font-bold">
+				<div className="text-small">
 					<Categories categories={categories} />
 				</div>
 			</div>

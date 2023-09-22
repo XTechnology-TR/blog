@@ -13,7 +13,7 @@ export default function Index({ allPosts: { edges }, preview }) {
 	const morePosts = edges.slice(1);
 
 	return (
-		<Layout preview={preview}>
+		<>
 			<Head>
 				<title>{`${CMS_NAME} Blog - Yazılım, Web, Mobil, Siber Güvenlik ve Yapay Zeka Hakkında Her Şey`}</title>
 			</Head>
@@ -26,14 +26,15 @@ export default function Index({ allPosts: { edges }, preview }) {
 						date={heroPost.date}
 						author={heroPost.author}
 						slug={heroPost.slug}
-						excerpt={heroPost.excerpt}
-					/>
+						excerpt={heroPost.excerpt} />
 				)}
 				{morePosts.length > 0 && <MoreStories posts={morePosts} />}
-			</Container>
-		</Layout>
-	);
+			</Container></>
+	)
 }
+
+
+
 
 export const getStaticProps: GetStaticProps = async ({ preview = false }) => {
 	const allPosts = await getAllPostsForHome(preview);

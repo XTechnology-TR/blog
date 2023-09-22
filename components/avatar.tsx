@@ -1,22 +1,22 @@
-import Image from "next/image";
+import Image from 'next/image'
 
 export default function Avatar({ author }) {
-	const { name } = author || { name: "Anonymous" };
+  const isAuthorHaveFullName = author?.node?.firstName && author?.node?.lastName
+  const name = isAuthorHaveFullName
+    ? `${author.node.firstName} ${author.node.lastName}`
+    : author.node.name || null
 
-	return (
-		<div className="flex items-center">
-			<div className="relative mr-1 h-12 w-12">
-				<Image
-					src="/usericon.svg"
-					className="rounded-full"
-					alt="Avatar Logo"
-					width={40}
-					height={40}
-				/>
-			</div>
-			<div className="text-rg mb-15 w-18 h-9 font-bold">
-				XTechnology İçerik Atölyesi
-			</div>
-		</div>
-	);
+  return (
+    <div className="flex items-center">
+      <div className="w-12 h-12 relative mr-4">
+        <Image
+          src="./usericon.svg"
+          layout="fill"
+          className="rounded-full"
+          alt={name}
+        />
+      </div>
+      <div className="text-xl font-bold">{name}</div>
+    </div>
+  )
 }
