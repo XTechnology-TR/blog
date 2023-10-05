@@ -15,14 +15,17 @@ interface Props {
 export default function CoverImage({ title, coverImage, slug }: Props) {
 	const image = (
 		<Image
-			width={2000}
-			height={1000}
-			alt={`Cover Image for ${title}`}
-			src={coverImage?.node.sourceUrl}
-			className={cn("card-thumbnail shadow-small", {
+            width={2000}
+            height={1000}
+            alt={`Cover Image for ${title}`}
+            src={coverImage?.node.sourceUrl}
+            className={cn("card-thumbnail shadow-small", {
 				"transition-shadow duration-200 hover:shadow-medium": slug,
 			})}
-		/>
+            style={{
+                maxWidth: "100%",
+                height: "auto"
+            }} />
 	);
 	return (
 		<div className="card-thumbnail-wrap">
