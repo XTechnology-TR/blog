@@ -1,0 +1,145 @@
+{
+  "pages": {
+    "login": {
+      "title": "Hesabınıza giriş yapın",
+      "signin": "Kayıt ol",
+      "signup": "Giriş Yap",
+      "divider": "Veya",
+      "fields": {
+        "email": "Email",
+        "password": "Şifre"
+      },
+      "errors": {
+        "validEmail": "Geçersiz e-posta adresi"
+      },
+      "buttons": {
+        "submit": "Giriş",
+        "forgotPassword": "Parolanızı mı unuttunuz?",
+        "noAccount": "Hesabınız yok mu?",
+        "rememberMe": "Beni Hatırla"
+      }
+    },
+    "forgotPassword": {
+      "title": "Parolanızı mı unuttunuz?",
+      "fields": {
+        "email": "Email"
+      },
+      "errors": {
+        "validEmail": "Geçersiz e-posta adresi"
+      },
+      "buttons": {
+        "submit": "Sıfırlama talimatlarını gönder"
+      }
+    },
+    "register": {
+      "title": "Ayrıcalıklı hesabınız için kaydolun",
+      "fields": {
+        "email": "Email",
+        "password": "Şifre"
+      },
+      "errors": {
+        "validEmail": "Geçersiz e-posta adresi"
+      },
+      "buttons": {
+        "submit": "Kayıt Ol",
+        "haveAccount": "Hesabınız var mı?"
+      }
+    },
+    "updatePassword": {
+      "title": "Şifre güncelle",
+      "fields": {
+        "password": "Yeni Şifre",
+        "confirmPassword": "Yeni şifreyi onayla"
+      },
+      "errors": {
+        "confirmPasswordNotMatch": "Parolalar uyuşmuyor"
+      },
+      "buttons": {
+        "submit": "Güncelle"
+      }
+    },
+    "error": {
+      "info": "{{action}} bileşenini {{resource}} kaynağına eklemeyi unutmuş olabilirsiniz.",
+      "404": "Üzgünüz, ziyaret ettiğiniz sayfa mevcut değil.",
+      "resource404": "{{resource}} kaynağını oluşturduğunuzdan emin misiniz?",
+      "backHome": "Anasayfaya dön"
+    }
+  },
+  "actions": {
+    "list": "List",
+    "create": "Create",
+    "edit": "Edit",
+    "show": "Show"
+  },
+  "buttons": {
+    "create": "Create",
+    "save": "Save",
+    "logout": "Logout",
+    "delete": "Delete",
+    "edit": "Edit",
+    "cancel": "Cancel",
+    "confirm": "Are you sure?",
+    "filter": "Filter",
+    "clear": "Clear",
+    "refresh": "Refresh",
+    "show": "Show",
+    "undo": "Undo",
+    "import": "Import",
+    "clone": "Clone",
+    "notAccessTitle": "You don't have permission to access"
+  },
+  "warnWhenUnsavedChanges": "Are you sure you want to leave? You have unsaved changes.",
+  "notifications": {
+    "success": "Successful",
+    "error": "Error (status code: {{statusCode}})",
+    "undoable": "You have {{seconds}} seconds to undo",
+    "createSuccess": "Successfully created {{resource}}",
+    "createError": "There was an error creating {{resource}} (status code: {{statusCode}})",
+    "deleteSuccess": "Successfully deleted {{resource}}",
+    "deleteError": "Error when deleting {{resource}} (status code: {{statusCode}})",
+    "editSuccess": "Successfully edited {{resource}}",
+    "editError": "Error when editing {{resource}} (status code: {{statusCode}})",
+    "importProgress": "Importing: {{processed}}/{{total}}"
+  },
+  "loading": "Loading",
+  "tags": {
+    "clone": "Clone"
+  },
+  "dashboard": {
+    "title": "Dashboard"
+  },
+  "blog_posts": {
+    "blog_posts": "Blog Posts",
+    "fields": {
+      "id": "Id",
+      "title": "Title",
+      "content": "Content",
+      "status": "Status",
+      "category": "Category",
+      "createdAt": "Created At"
+    },
+    "titles": {
+      "create": "Create Blog Post",
+      "edit": "Edit Blog Post",
+      "list": "Blog Posts",
+      "show": "Show Blog Post"
+    }
+  },
+  "categories": {
+    "categories": "Categories",
+    "fields": {
+      "id": "Id",
+      "title": "Title",
+      "createdAt": "Created At"
+    },
+    "titles": {
+      "create": "Create Category",
+      "edit": "Edit Category",
+      "list": "Categories",
+      "show": "Show Category"
+    }
+  },
+  "table": {
+    "actions": "Actions"
+  }
+}
