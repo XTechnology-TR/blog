@@ -8,15 +8,13 @@ export default function RootLayout({
 	children: React.ReactNode
 }) {
 	return (
-		<html lang="tr">
-			<>
-				<div className="min-h-screen">
-					<Alert />
-					<main>{children}</main>
-				</div>
-			</>
+		<>
+			<div className="min-h-screen">
+				<Alert />
+				<main>{children}</main>
+			</div>
 			<Footer />
-		</html>
+		</>
 	)
 }
 

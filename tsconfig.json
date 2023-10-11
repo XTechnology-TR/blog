@@ -1,4 +1,44 @@
 {
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"allOf": [
+		{
+			"$ref": "#/definitions/compilerOptionsDefinition"
+		},
+		{
+			"$ref": "#/definitions/compileOnSaveDefinition"
+		},
+		{
+			"$ref": "#/definitions/typeAcquisitionDefinition"
+		},
+		{
+			"$ref": "#/definitions/extendsDefinition"
+		},
+		{
+			"$ref": "#/definitions/watchOptionsDefinition"
+		},
+		{
+			"$ref": "#/definitions/buildOptionsDefinition"
+		},
+		{
+			"$ref": "#/definitions/tsNodeDefinition"
+		},
+		{
+			"anyOf": [
+				{
+					"$ref": "#/definitions/filesDefinition"
+				},
+				{
+					"$ref": "#/definitions/excludeDefinition"
+				},
+				{
+					"$ref": "#/definitions/includeDefinition"
+				},
+				{
+					"$ref": "#/definitions/referencesDefinition"
+				}
+			]
+		}
+	],
 	"compilerOptions": {
 		"target": "es5",
 		"lib": [
