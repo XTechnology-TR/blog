@@ -84,19 +84,19 @@ export default function Footer() {
       <div className="section bg-pink wf-section">
         <div className="container">
           <div className="section-intro cta">
-          <div>
-            <Image
-              src="/gelecek.svg"
-              loading="lazy"
-              alt="resim"
-              width={1150}
-              height={250}
-              className="gelecek"
-              style={{
-                maxWidth: "100%",
-                height: "auto"
-              }} />
-          </div>
+            <div>
+              <Image
+                src="/gelecek.svg"
+                loading="lazy"
+                alt="resim"
+                width={1150}
+                height={250}
+                className="gelecek"
+                style={{
+                  maxWidth: "100%",
+                  height: "auto"
+                }} />
+            </div>
           </div>
         </div>
       </div>

@@ -10,9 +10,9 @@ export default function Avatar({ author }) {
     <div className="flex items-center">
       <div className="w-12 h-12 relative mr-4">
         <Image
-          src="./usericon.svg"
+          src="/usericon.svg"
           className="rounded-full"
-          alt={name}
+          alt="xtechnology_logo"
           fill
           sizes="100vw" />
       </div>

@@ -4,6 +4,7 @@ import Container from "../components/container";
 import MoreStories from "../components/more-stories";
 import HeroPost from "../components/hero-post";
 import Intro from "../components/intro";
+import Layout from "../components/layout";
 import { getAllPostsForHome } from "../lib/api";
 import { CMS_NAME } from "../lib/constants";
 
@@ -13,22 +14,24 @@ export default function Index({ allPosts: { edges }, preview }) {
 
 	return (
 		<>
-			<Head>
-				<title>{`${CMS_NAME} Blog - Yazılım, Web, Mobil, Siber Güvenlik ve Yapay Zeka Hakkında Her Şey`}</title>
-			</Head>
-			<Container>
-				<Intro />
-				{heroPost && (
-					<HeroPost
-						title={heroPost.title}
-						coverImage={heroPost.featuredImage}
-						date={heroPost.date}
-						author={heroPost.author}
-						slug={heroPost.slug}
-						excerpt={heroPost.excerpt} />
-				)}
-				{morePosts.length > 0 && <MoreStories posts={morePosts} />}
-			</Container></>
+			<Layout>
+				<Head>
+					<title>{`${CMS_NAME} Blog - Yazılım, Web, Mobil, Siber Güvenlik ve Yapay Zeka Hakkında Her Şey`}</title>
+				</Head>
+				<Container>
+					<Intro />
+					{heroPost && (
+						<HeroPost
+							title={heroPost.title}
+							coverImage={heroPost.featuredImage}
+							date={heroPost.date}
+							author={heroPost.author}
+							slug={heroPost.slug}
+							excerpt={heroPost.excerpt} />
+					)}
+					{morePosts.length > 0 && <MoreStories posts={morePosts} />}
+				</Container>
+			</Layout></>
 	)
 }
 

@@ -13,8 +13,7 @@ export default function RootLayout({
 				<Alert />
 				<main>{children}</main>
 			</div>
-			<Footer />
-		</>
+			<Footer /></>
 	)
 }
 
