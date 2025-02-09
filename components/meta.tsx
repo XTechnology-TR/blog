@@ -17,20 +17,19 @@ export default function Meta() {
 			<link rel="alternate" type="application/rss+xml" href="/feed.xml" />
 			<meta
 				name="description"
-				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojilerin analizi yapar."
+				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojiler hakkında bilgi."
 			/>
 			<meta property="og:image" content={HOME_OG_IMAGE_URL} />
 			<meta property="og:url" content="https://blog.xtechnology.co" />
 			<meta property="og:type" content="website" />
 			<meta property="og:title" content={CMS_NAME} />
-			<meta property="og:image" content={HOME_OG_IMAGE_URL} />
 			<meta
 				property="og:image:alt"
-				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojilerin analizi yapar."
+				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojiler hakkında bilgi."
 			/>
 			<meta
 				property="og:description"
-				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojilerin analizi yapar."
+				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojiler hakkında bilgi."
 			/>
 			<meta property="og:site_name" content={CMS_NAME} />
 			<meta property="og:locale" content="tr_TR" />
@@ -52,7 +51,7 @@ export default function Meta() {
 				sizes="16x16"
 				href="/favicon/favicon-16x16.png"
 			/>
-			<link rel="manifest" href="/favicon/manifest.json" content="manifest" />
+			<link rel="manifest" href="/favicon/manifest.json" />
 
 			<link
 				rel="mask-icon"
@@ -63,15 +62,15 @@ export default function Meta() {
 			<meta name="twitter:site" content="@xtechnology7" />
 			<meta name="twitter:creator" content="@xtechnology7" />
 			<meta name="twitter:url" content="https://blog.xtechnology.co" />
-			<meta name="twitter:title" content="{post_title}" />
+			<meta name="twitter:title" content={CMS_NAME} />
 			<meta
 				name="twitter:description"
-				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojilerin analizi yapar."
+				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojiler hakkında bilgi."
 			/>
-			<meta name="twitter:image" content="{HOME_OG_IMAGE_URL}" />
+			<meta name="twitter:image" content={HOME_OG_IMAGE_URL} />
 			<meta
 				name="twitter:image:alt"
-				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojilerin analizi yapar."
+				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojiler hakkında bilgi."
 			/>
 		</>
 	);

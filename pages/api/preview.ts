@@ -3,7 +3,7 @@ import { getPreviewPost } from "../../lib/api";
 
 export default async function preview(
 	req: NextApiRequest,
-	res: NextApiResponse
+	res: NextApiResponse,
 ) {
 	const { secret, id, slug } = req.query;
 

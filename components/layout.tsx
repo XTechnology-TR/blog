@@ -1,11 +1,10 @@
 import Alert from "./alert";
 import Footer from "./footer";
 
-
 export default function RootLayout({
 	children,
 }: {
-	children: React.ReactNode
+	children: React.ReactNode;
 }) {
 	return (
 		<>
@@ -13,7 +12,7 @@ export default function RootLayout({
 				<Alert />
 				<main>{children}</main>
 			</div>
-			<Footer /></>
-	)
+			<Footer />
+		</>
+	);
 }
-
