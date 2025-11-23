@@ -1,55 +1,35 @@
-export default class ScriptLoader {
-	src: any;
-	global: any;
-	protocol: any;
-	isLoaded: boolean;
-	constructor(options) {
-		const { src, global, protocol = document.location.protocol } = options;
-		this.src = src;
-		this.global = global;
-		this.protocol = protocol;
-		this.isLoaded = false;
+// ScriptLoader.tsx
+import { useEffect, useState } from "react";
+
+interface ScriptLoaderProps {
+	src: string;
+	protocol?: string;
+}
+
+export default function ScriptLoader({ src, protocol }: ScriptLoaderProps) {
+	const [isLoaded, setIsLoaded] = useState(false);
+	const [error, setError] = useState(null);
+
+	useEffect(() => {
+		const script = document.createElement("script");
+		script.src = `${protocol}//${src}`;
+		script.async = true;
+		script.onload = () => setIsLoaded(true);
+		script.onerror = (e) => setError(e);
+		const el = document.getElementsByTagName("script")[0];
+		el.parentNode.insertBefore(script, el);
+		return () => {
+			el.parentNode.removeChild(script);
+		};
+	}, [src, protocol]);
+
+	if (error) {
+		return <div>Error loading script: {error.message}</div>;
 	}
 
-	loading = "lazy"; // {lazy} | {eager}
-
-	loadScript() {
-		return new Promise((resolve, reject) => {
-			// Create script element and set attributes
-			const script = document.createElement("script");
-			script.type = "text/javascript";
-			script.async = true;
-			script.src = `${this.protocol}//${this.src}`;
-
-			// Append the script to the DOM
-			const el = document.getElementsByTagName("script")[0];
-			el.parentNode.insertBefore(script, el);
-
-			// Resolve the promise once the script is loaded
-			script.addEventListener("load", () => {
-				this.isLoaded = true;
-				resolve(script);
-			});
-
-			// Catch any errors while loading the script
-			script.addEventListener("error", () => {
-				reject(new Error(`${this.src} failed to load.`));
-			});
-		});
+	if (!isLoaded) {
+		return <div>Loading script...</div>;
 	}
 
-	load() {
-		return new Promise(async (resolve, reject) => {
-			if (!this.isLoaded) {
-				try {
-					await this.loadScript();
-					resolve(window[this.global]);
-				} catch (e) {
-					reject(e);
-				}
-			} else {
-				resolve(window[this.global]);
-			}
-		});
-	}
+	return null;
 }

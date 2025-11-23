@@ -10,15 +10,17 @@ interface Props {
 		};
 	};
 	slug?: string;
+	priority?: boolean;
 }
 
-export default function CoverImage({ title, coverImage, slug }: Props) {
+export default function CoverImage({ title, coverImage, slug, priority = false }: Props) {
 	const image = (
 		<Image
 			width={1000}
-			height={1000}
+			height={600}
 			alt={`Cover Image for ${title}`}
 			src={coverImage?.node.sourceUrl}
+			priority={priority}
 			className={cn("card-thumbnail shadow-small", {
 				"transition-shadow duration-200 hover:shadow-medium": slug,
 			})}

@@ -16,7 +16,7 @@ export default function Index({ allPosts: { edges } }) {
 		<>
 			<Layout>
 				<Head>
-					<title>{`${CMS_NAME} Blog - Yazılım, Web, Mobil, Siber Güvenlik ve Yapay Zeka Hakkında Her Şey`}</title>
+					<title>{`Blog - ${CMS_NAME}`}</title>
 				</Head>
 				<Container>
 					<Intro />
@@ -24,7 +24,6 @@ export default function Index({ allPosts: { edges } }) {
 						<HeroPost
 							title={heroPost.title}
 							coverImage={heroPost.featuredImage}
-							date={heroPost.date}
 							author={heroPost.author}
 							slug={heroPost.slug}
 							excerpt={heroPost.excerpt}

@@ -1,5 +1,5 @@
+import React from "react";
 import Alert from "./alert";
-import Footer from "./footer";
 
 export default function RootLayout({
 	children,
@@ -7,12 +7,15 @@ export default function RootLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<>
-			<div className="min-h-screen">
-				<Alert />
-				<main>{children}</main>
-			</div>
-			<Footer />
-		</>
+		<html lang="tr">
+			<body>
+				{/* Layout UI */}
+				{/*Çocukları sayfayı veya iç içe düzeni oluşturmak istediğiniz yere yerleştirin */}
+				<div className="min-h-screen">
+					<Alert />
+					<main>{children}</main>
+				</div>
+			</body>
+		</html>
 	);
 }

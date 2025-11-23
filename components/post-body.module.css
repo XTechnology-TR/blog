@@ -1,49 +1,61 @@
 .content {
-	@apply text-lg leading-relaxed;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
 }
 
 .content p,
 .content ul,
 .content ol {
-	@apply my-6;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
 }
 
 .content a {
-	@apply underline;
-}
-
-.content ul,
-.content ol {
-	@apply pl-4;
+	text-decoration: underline;
 }
 
 .content ul {
-	@apply list-disc;
+	padding-left: 1rem;
+	padding-left: 1rem; /* pl-4 */
 }
 
-.content ol {
-	@apply list-decimal;
+.content ul {
+	list-style-type: disc;
+	list-style-type: disc; /* list-disc */
 }
 
-.content ul > li > ul,
-.content ol > li > ol {
-	@apply my-0 ml-4;
+.content ul {
+	list-style-type: decimal;
+	list-style-type: decimal; /* list-decimal */
+}
+
+.content ul > li > ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 1rem;
+	margin-top: 0; /* my-0 */
+	margin-left: 1rem; /* ml-4 */
 }
 
 .content ul > li > ul {
 	list-style: circle;
-}
-
-.content h2 {
-	@apply mb-4 mt-12 text-3xl leading-snug;
+	margin-bottom: 1rem;
+	margin-top: 3rem;
+	font-size: 1.875rem;
 }
 
 .content h3 {
-	@apply mb-4 mt-8 text-2xl leading-snug;
+	margin-bottom: 1rem; /* mb-4 */
+	margin-top: 2rem; /* mt-8 */
+	font-size: 1.5rem; /* text-2xl */
+	line-height: 1.375; /* leading-snug */
 }
 
 .content h4 {
-	@apply mb-4 mt-6 text-xl leading-snug;
+	margin-bottom: 1rem; /* mb-4 */
+	margin-top: 1.5rem; /* mt-6 */
+	font-size: 1.25rem; /* text-xl */
+	line-height: 1.375; /* leading-snug */
 }
 
 /* removes default styling from input color element */
@@ -54,35 +66,55 @@
 
 .content ::-webkit-color-swatch-wrapper {
 	padding: 0;
-}
+	text-align: center;
+	font-size: 0.875rem;
 
-.content ::-moz-color-swatch,
-.content ::-moz-focus-inner {
-	border: none;
-}
+	.content ::-moz-color-swatch {
+		margin-left: 0;
+		border-left-width: 4px;
+		border-color: #6b7280;
+		background-color: #e5e7eb;
+		margin-top: 0;
+		padding-right: 1.5rem;
+		padding-top: 1rem;
+	}
 
-.content ::-moz-focus-inner {
-	padding: 0;
-}
+	.content figcaption {
+		text-align: center; /* text-center */
+		font-size: 0.875rem; /* text-sm */
+	}
 
-.content figcaption {
-	@apply text-center text-sm;
-}
+	.content blockquote {
+		margin-left: 0; /* ml-0 */
+		border-left-width: 4px; /* border-l-4 */
+		border-color: #6b7280; /* border-gray-500 */
+		background-color: #e5e7eb; /* bg-gray-200 */
+		padding-left: 1.5rem; /* px-6 */
+		padding-right: 1.5rem; /* px-6 */
+		padding-top: 1rem; /* py-4 */
+		padding-bottom: 1rem; /* py-4 */
+		font-style: italic; /* italic */
+	}
 
-.content blockquote {
-	@apply ml-0 border-l-4 border-gray-500 bg-gray-200 px-6 py-4 italic;
-}
+	.content blockquote p {
+		margin-top: 0; /* mt-0 */
+	}
 
-.content blockquote p {
-	@apply mt-0;
+	.content blockquote cite {
+		font-style: normal; /* not-italic */
+	}
+
+	.content audio {
+		width: 100%; /* w-full */
+	}
 }
 
 .content blockquote cite {
-	@apply not-italic;
+	font-style: normal; /* not-italic */
 }
 
 .content audio {
-	@apply w-full;
+	width: 100%; /* w-full */
 }
 
 .content img {
@@ -93,11 +125,8 @@
 }
 
 .content a {
-	background: linear-gradient(
-			to right,
-			rgba(100, 200, 200, 1),
-			rgba(100, 200, 200, 1)
-		),
+	background:
+		linear-gradient(to right, rgba(100, 200, 200, 1), rgba(100, 200, 200, 1)),
 		linear-gradient(
 			to right,
 			rgba(255, 0, 0, 1),

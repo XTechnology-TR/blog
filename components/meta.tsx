@@ -3,10 +3,7 @@ import { CMS_NAME, HOME_OG_IMAGE_URL } from "../lib/constants";
 export default function Meta() {
 	return (
 		<>
-			<meta
-				name="keywords"
-				content={`${CMS_NAME} blog teknoloji, bilim, blog posts, posts, yazılım, web tasarım, seo, dijital pazarlama`}
-			/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 			<link rel="shortcut icon" href="/favicon/favicon.ico" />
 			<meta name="msapplication-TileColor" content="#000000" />
 			<meta name="msapplication-config" content="/favicon/browserconfig.xml" />
@@ -18,6 +15,10 @@ export default function Meta() {
 			<meta
 				name="description"
 				content="XTechnology Blog, yazılım geliştirme, web ve mobil teknolojiler, siber güvenlik, yapay zeka, veri analizi ve sosyal medya yönetimi alanlarında tecrübe paylaşımı ve yeni teknolojiler hakkında bilgi."
+			/>
+			<meta
+				name="keywords"
+				content="blog teknoloji, bilim, yazılım, web tasarım, seo, dijital pazarlama"
 			/>
 			<meta property="og:image" content={HOME_OG_IMAGE_URL} />
 			<meta property="og:url" content="https://blog.xtechnology.co" />

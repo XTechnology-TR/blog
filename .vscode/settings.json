@@ -1,5 +1,6 @@
 {
-    "editor.tabCompletion": "on",
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "commentTranslate.multiLineMerge": true
+	"editor.tabCompletion": "on",
+	"typescript.tsdk": "node_modules/typescript/lib",
+	"commentTranslate.multiLineMerge": true,
+	"css.lint.unknownAtRules": "ignore"
 }

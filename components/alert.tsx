@@ -2,7 +2,7 @@ import Image from "next/image";
 import "../pages/dev";
 import Link from "next/link";
 
-export default function Alert({}) {
+export default function Alert({ }) {
 	return (
 		<>
 			<div className="mega-xtech-logo-wrap">
@@ -134,7 +134,7 @@ export default function Alert({}) {
 							</div>
 							<div
 								className="nav-link-underline"
-							style={{ width: "0%", height: "1px" }}
+								style={{ width: "0%", height: "1px" }}
 							></div>
 						</a>
 						<a

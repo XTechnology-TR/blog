@@ -1,5 +1,3 @@
-
-
 export default function Header() {
 	return (
 		<h4>
@@ -7,6 +5,5 @@ export default function Header() {
 				Geleceği inşaa eden, teknolojiyi Kodluyoruz!
 			</div>
 		</h4>
-
 	);
 }

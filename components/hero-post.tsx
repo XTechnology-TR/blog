@@ -2,18 +2,12 @@ import Avatar from "./avatar";
 import CoverImage from "./cover-image";
 import Link from "next/link";
 
-export default function HeroPost({
-	title,
-	coverImage,
-	excerpt,
-	author,
-	slug,
-}) {
+export default function HeroPost({ title, coverImage, excerpt, author, slug }) {
 	return (
 		<section>
 			<div className="card-wrap w-inline-block mb-8 md:mb-16">
 				{coverImage && (
-					<CoverImage title={title} coverImage={coverImage} slug={slug} />
+					<CoverImage title={title} coverImage={coverImage} slug={slug} priority={true} />
 				)}
 			</div>
 			<div className="mb-20 md:mb-28 md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8">
